@@ -4,15 +4,12 @@ a = int(input('Dame el primer número: '))
 b = int(input('Dame el segundo número: '))
 c = int(input('Dame el tercer número: '))
 
-if a > b:
-    if a > c:
-        maximo = a
-    else:
-        maximo = c
-else:
-    if b > c:
-        maximo = b
-    else:
-        maximo = c
+candidato = a
+
+if b > candidato:
+    candidato = b
+if c > candidato:
+    candidato = c
+maximo = candidato
 
 print('El maximo es:', maximo)
