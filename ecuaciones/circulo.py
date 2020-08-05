@@ -18,14 +18,12 @@ opcion = input('Teclea a, b ó c y pulsa el retorno de carro: ')
 if opcion == 'a' or opcion == 'A': #Cálculo del diámetro.
     diametro = 2 * radio
     print('El diámetro es {0}.'.format(diametro))
+elif opcion == 'b' or opcion == 'B': #Cálculo de perímetro.
+    perimetro = 2 * pi * radio
+    print('El perimetro es {0}.'.format(perimetro))
+elif opcion == 'c' or opcion == 'C': #Cálculo del área.
+    area = pi * radio **2
+    print('El área es {0}.'.format(area))
 else:
-    if opcion == 'b' or opcion == 'B': #Cálculo de perímetro.
-        perimetro = 2 * pi * radio
-        print('El perimetro es {0}.'.format(perimetro))
-    else:
-        if opcion == 'c' or opcion == 'C': #Cálculo del área.
-            area = pi * radio **2
-            print('El área es {0}.'.format(area))
-        else:
-            print('Solo hay tres opciones: a, b ó c')
-            print('Tú has tecleado "{0}".'.format(opcion))
+    print('Solo hay tres opciones: a, b ó c')
+    print('Tú has tecleado "{0}".'.format(opcion))
