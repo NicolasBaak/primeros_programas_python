@@ -1,9 +1,13 @@
-numero = 7
+numero = int(input('Dame un número: '))
 
-creo_que_es_primo = True
-for division in range(2, numero):
-    if numero % division != 0:
-        creo_que_es_primo = False
+if numero > 1:
+    creo_que_es_primo = True
+    for division in range(2, numero):
+        if numero % division != 0:
+            creo_que_es_primo = False
+else:
+    creo_que_es_primo = False
+
 if creo_que_es_primo:
     print('El número {0} es primo.'.format(numero))
 else:
