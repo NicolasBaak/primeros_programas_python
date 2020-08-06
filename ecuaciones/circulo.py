@@ -8,22 +8,27 @@ from math import  pi
 radio = float(input('Dame el radio de un círculo: '))
 
 #Menu
-print('Escoge una opción: ')
-print('(a) Calcular el diámetro.')
-print('(b) Calcular el perimetro.')
-print('(c) Calcular el área.')
-opcion = input('Teclea a, b ó c y pulsa el retorno de carro: ')
+opcion = ''
+while opcion != 'd':
+    print('Escoge una opción: ')
+    print('(a) Calcular el diámetro.')
+    print('(b) Calcular el perimetro.')
+    print('(c) Calcular el área.')
+    print('(d) Finalizar.')
+    opcion = input('Teclea a, b ó c y pulsa el retorno de carro: ')
 
-#operaciones
-if opcion == 'a' or opcion == 'A': #Cálculo del diámetro.
-    diametro = 2 * radio
-    print('El diámetro es {0}.'.format(diametro))
-elif opcion == 'b' or opcion == 'B': #Cálculo de perímetro.
-    perimetro = 2 * pi * radio
-    print('El perimetro es {0}.'.format(perimetro))
-elif opcion == 'c' or opcion == 'C': #Cálculo del área.
-    area = pi * radio **2
-    print('El área es {0}.'.format(area))
-else:
-    print('Solo hay tres opciones: a, b ó c')
-    print('Tú has tecleado "{0}".'.format(opcion))
+    #operaciones
+    if opcion == 'a' or opcion == 'A': #Cálculo del diámetro.
+        diametro = 2 * radio
+        print('\nEl diámetro es {0}\n'.format(diametro))
+    elif opcion == 'b' or opcion == 'B': #Cálculo de perímetro.
+        perimetro = 2 * pi * radio
+        print('\nEl perimetro es {0}\n'.format(perimetro))
+    elif opcion == 'c' or opcion == 'C': #Cálculo del área.
+        area = pi * radio **2
+        print('\nEl área es {0}\n'.format(area))
+    else:
+        print('\nSolo hay tres opciones: a, b ó c')
+        print('Tú has tecleado "{0}"\n'.format(opcion))
+
+print('Gracias por usar el programa.')
