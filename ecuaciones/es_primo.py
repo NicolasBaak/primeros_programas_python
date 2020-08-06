@@ -2,9 +2,11 @@ numero = int(input('Dame un número: '))
 
 if numero > 1:
     creo_que_es_primo = True
-    for division in range(2, numero):
-        if numero % division != 0:
+    divisor = 2
+    while divisor < numero and creo_que_es_primo:
+        if numero % divisor == 0:
             creo_que_es_primo = False
+        divisor +=1
 else:
     creo_que_es_primo = False
 
